@@ -13,6 +13,7 @@ public class Usuario {
     private String DigitoVerificador;
     private Date FechaNacimiento;
     private String Email;
+    private String NombreUsuario;
     private String Contrasena;
     
     public Usuario(){
@@ -25,12 +26,13 @@ public class Usuario {
         this.DigitoVerificador = "";
         this.FechaNacimiento = new Date();
         this.Email = "";
+        this.NombreUsuario = "";
         this.Contrasena = "";
     }
     public Usuario(int Id, String PrimerNombre, String SegundoNombre,
             String ApellidoPaterno, String ApellidoMaterno, int NumeroRut,
-            String DigitoVerificador, Date FechaNacimiento, String Email,
-            String Contraseña){
+            String DigitoVerificador, Date FechaNacimiento, String Email, 
+            String NombreUsuario, String Contraseña){
         this.Id = Id;
         this.PrimerNombre = PrimerNombre;
         this.SegundoNombre = SegundoNombre;
@@ -40,6 +42,7 @@ public class Usuario {
         this.DigitoVerificador = DigitoVerificador;
         this.FechaNacimiento = FechaNacimiento;
         this.Email = Email;
+        this.NombreUsuario = NombreUsuario;
         this.Contrasena = Contraseña;
     }
 
@@ -114,13 +117,25 @@ public class Usuario {
     public void setEmail(String Email) {
         this.Email = Email;
     }
-
-    public String getContrasena() {
+    
+    public String getNombreUsuaruio(){
+        return NombreUsuario;
+    }
+    
+    public void setNombreUsuario(String NombreUsuario){
+        this.NombreUsuario = NombreUsuario;
+    }
+    
+    public String getContrasena(){
         return Contrasena;
     }
 
     public void setContrasena(String Contrasena) {
         this.Contrasena = Contrasena;
+    }
+
+    public void setPrimerNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

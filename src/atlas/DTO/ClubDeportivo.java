@@ -1,12 +1,11 @@
 package atlas.DTO;
 
-import java.util.Date;
 
 public class ClubDeportivo {
     private String RolUnico;
     private String NombreClub;
     private String NombreFundador;
-    private Date AñoFundacion;
+    private int AnoFundacion;
     private String PaisOrigen;
     private String Lema;
     private String Colores;
@@ -16,7 +15,7 @@ public class ClubDeportivo {
         this.RolUnico = "";
         this.NombreClub = "";
         this.NombreFundador = "";
-        this.AñoFundacion = new Date();
+        this.AnoFundacion = 0;
         this.PaisOrigen = "";
         this.Lema ="";
         this.Colores = "";
@@ -24,11 +23,11 @@ public class ClubDeportivo {
         
 }
 
-    public ClubDeportivo(String RolUnico, String NombreClub, String NombreFundador, Date AñoFundacion, String PaisOrigen, String Lema, String Colores, int ValorSubscripcion) {
+    public ClubDeportivo(String RolUnico, String NombreClub, String NombreFundador, int AñoFundacion, String PaisOrigen, String Lema, String Colores, int ValorSubscripcion) {
         this.RolUnico = RolUnico;
         this.NombreClub = NombreClub;
         this.NombreFundador = NombreFundador;
-        this.AñoFundacion = AñoFundacion;
+        this.AnoFundacion = AñoFundacion;
         this.PaisOrigen = PaisOrigen;
         this.Lema = Lema;
         this.Colores = Colores;
@@ -59,12 +58,16 @@ public class ClubDeportivo {
         this.NombreFundador = NombreFundador;
     }
 
-    public Date getAñoFundacion() {
-        return AñoFundacion;
+    public int getAnoFundacion() {
+        return AnoFundacion;
     }
 
-    public void setAñoFundacion(Date AñoFundacion) {
-        this.AñoFundacion = AñoFundacion;
+    /**
+     *
+     * @param AñoFundacion
+     */
+    public void setAnoFundacion(int AñoFundacion) {
+        this.AnoFundacion = AnoFundacion;
     }
 
     public String getPaisOrigen() {
@@ -98,4 +101,5 @@ public class ClubDeportivo {
     public void setValorSubscripcion(int ValorSubscripcion) {
         this.ValorSubscripcion = ValorSubscripcion;
     }
+
 }

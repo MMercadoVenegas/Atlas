@@ -1,7 +1,9 @@
 package atlas.DTO;
 
+import java.util.Date;
+
 public class Subscripcion {
-    private date InicioSubscripcion;
+    private Date InicioSubscripcion;
     private int ValorSubscripcion;
     private String Equipo;
     private int AbonoTotal;
@@ -9,7 +11,7 @@ public class Subscripcion {
     private ClubDeportivo ClubDeportivo;
     
     public Subscripcion(){
-        this.InicioSubscripcion = new date();
+        this.InicioSubscripcion = new Date();
         this.ValorSubscripcion = 0;
         this.Equipo = "";
         this.AbonoTotal = 0;
@@ -18,7 +20,7 @@ public class Subscripcion {
         
     }
 
-    public Subscripcion(date InicioSubscripcion, int ValorSubscripcion, String Equipo, int AbonoTotal, Usuario Usuario, ClubDeportivo ClubDeportivo) {
+    public Subscripcion(Date InicioSubscripcion, int ValorSubscripcion, String Equipo, int AbonoTotal, Usuario Usuario, ClubDeportivo ClubDeportivo) {
         this.InicioSubscripcion = InicioSubscripcion;
         this.ValorSubscripcion = ValorSubscripcion;
         this.Equipo = Equipo;
@@ -27,11 +29,11 @@ public class Subscripcion {
         this.ClubDeportivo = ClubDeportivo;
     }
 
-    public date getInicioSubscripcion() {
+    public Date getInicioSubscripcion() {
         return InicioSubscripcion;
     }
 
-    public void setInicioSubscripcion(date InicioSubscripcion) {
+    public void setInicioSubscripcion(Date InicioSubscripcion) {
         this.InicioSubscripcion = InicioSubscripcion;
     }
 
