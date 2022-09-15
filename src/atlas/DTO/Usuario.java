@@ -12,6 +12,7 @@ public class Usuario {
     private int NumeroRut;
     private String DigitoVerificador;
     private Date FechaNacimiento;
+    private int Telefono;
     private String Email;
     private String NombreUsuario;
     private String Contrasena;
@@ -25,13 +26,14 @@ public class Usuario {
         this.NumeroRut = 0;
         this.DigitoVerificador = "";
         this.FechaNacimiento = new Date();
+        this.Telefono = 0;
         this.Email = "";
         this.NombreUsuario = "";
         this.Contrasena = "";
     }
     public Usuario(int Id, String PrimerNombre, String SegundoNombre,
             String ApellidoPaterno, String ApellidoMaterno, int NumeroRut,
-            String DigitoVerificador, Date FechaNacimiento, String Email, 
+            String DigitoVerificador, Date FechaNacimiento,int Telefono, String Email, 
             String NombreUsuario, String Contraseña){
         this.Id = Id;
         this.PrimerNombre = PrimerNombre;
@@ -41,6 +43,7 @@ public class Usuario {
         this.NumeroRut = NumeroRut;
         this.DigitoVerificador = DigitoVerificador;
         this.FechaNacimiento = FechaNacimiento;
+        this.Telefono = Telefono;
         this.Email = Email;
         this.NombreUsuario = NombreUsuario;
         this.Contrasena = Contraseña;
@@ -108,6 +111,14 @@ public class Usuario {
 
     public void setFechaNacimiento(Date FechaNacimiento) {
         this.FechaNacimiento = FechaNacimiento;
+    }
+    
+        public int getTelefono() {
+        return Telefono;
+    }
+
+    public void setTelefono(int Telefono) {
+        this.Telefono = Telefono;
     }
 
     public String getEmail() {
