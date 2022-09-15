@@ -98,3 +98,4 @@ public class ClubDeportivo {
     public void setValorSubscripcion(int ValorSubscripcion) {
         this.ValorSubscripcion = ValorSubscripcion;
     }
+}
